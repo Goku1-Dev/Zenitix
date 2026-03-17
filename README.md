@@ -1,6 +1,6 @@
-# Zenitix Engine
+# Zenitix JS Library
 
-A lightweight, from-scratch Zenitix Library system for the web. Write components in JSX-like syntax, manage state through plain TypeScript files, and get fine-grained Zenitix Library, async handling, routing, and devtools out of the box.
+A lightweight, from-scratch Zenitix JS Library system for the web. Write components in JSX-like syntax, manage state through plain TypeScript files, and get fine-grained Zenitix JS Library, async handling, routing, and devtools out of the box.
 
 > **Status:** Early stage — core features are stable and actively expanding.
 
@@ -30,7 +30,7 @@ A lightweight, from-scratch Zenitix Library system for the web. Write components
 
 ## Overview
 
-Zenitix Library Engine is a **zero-dependency** Zenitix Library layer that brings a reactive programming model to the DOM without a virtual DOM or a heavy framework. Key ideas:
+Zenitix JS Library Engine is a **zero-dependency** Zenitix JS Library layer that brings a reactive programming model to the DOM without a virtual DOM or a heavy framework. Key ideas:
 
 - **Signals** are the atomic unit of state — reading a signal inside an effect automatically subscribes to it.
 - **State files** are plain `.state.ts` files with `export let` variables; the compiler transforms them into reactive signals transparently.
@@ -333,7 +333,7 @@ No decorators, no class syntax, no `useState` wrapper — just regular TypeScrip
 ## Project Structure
 
 ```
-Zenitix Library-Engine/
+Zenitix JS Library-Engine/
 ├── src/
 │   ├── reactive.ts       # Signal class, observer tracking, batch
 │   ├── effect.ts         # effect(), onMount(), onUnmount(), onError()
