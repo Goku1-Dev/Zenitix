@@ -32,9 +32,9 @@
   --text:        #1a1814;
   --text-dim:    #8a8278;
   --text-muted:  #b0a898;
-  --accent:      #1a1814;
-  --accent-dim:  rgba(26,24,20,.06);
-  --accent-dim2: rgba(26,24,20,.12);
+  --accent:      #004BBE;
+  --accent-dim:  rgba(0, 75, 190, .06);
+  --accent-dim2: rgba(0, 75, 190, .12);
   --red:         #c0392b;
   --red-dim:     rgba(192,57,43,.07);
 }
@@ -125,7 +125,7 @@ body {
   line-height: 1.4;
 }
 
-[data-theme="light"] .demo-badge { color: #f4f1eb; background: var(--text); }
+[data-theme="light"] .demo-badge { color: #f4f1eb; background: var(--accent); }
 
 /* Nav items */
 .sidebar-nav {
@@ -386,7 +386,7 @@ code {
   border-radius: 2px;
 }
 
-[data-theme="light"] code { color: #1a1814; background: rgba(26,24,20,.1); }
+[data-theme="light"] code { color: var(--accent); background: var(--accent-dim); }
 
 .doc-subheading {
   font-size: 11px;
@@ -472,8 +472,8 @@ code {
   color: var(--accent);
 }
 
-[data-theme="light"] .monitor-tag-text { color: var(--text-dim); }
-[data-theme="light"] .monitor-pulse    { background: var(--text-dim); box-shadow: none; }
+[data-theme="light"] .monitor-tag-text { color: var(--accent); }
+[data-theme="light"] .monitor-pulse    { background: var(--accent); box-shadow: 0 0 4px var(--accent); }
 
 .monitor-title {
   font-size: 16px;
@@ -527,7 +527,7 @@ code {
   letter-spacing: .1em;
 }
 
-[data-theme="light"] .monitor-value.accent { color: #059669; }
+[data-theme="light"] .monitor-value.accent { color: var(--accent); }
 
 /* ─── Buttons ─── */
 .demo-btn {
@@ -559,7 +559,7 @@ code {
   color: #0a0a0a;
 }
 
-[data-theme="light"] .demo-btn.primary { color: #f4f1eb; background: var(--text); border-color: var(--text); }
+[data-theme="light"] .demo-btn.primary { color: #f4f1eb; background: var(--accent); border-color: var(--accent); }
 
 .demo-btn.primary:hover { opacity: .88; }
 
@@ -726,7 +726,7 @@ code {
 
 .trace-log-line { display: flex; gap: 10px; }
 .trace-tag      { color: var(--accent); font-weight: 700; flex-shrink: 0; }
-[data-theme="light"] .trace-tag { color: var(--text-dim); }
+[data-theme="light"] .trace-tag { color: var(--accent); }
 
 /* ─── User profile card (async) ─── */
 .user-profile-card {
@@ -783,7 +783,7 @@ code {
 
 @keyframes blink { 50% { opacity: 0; } }
 
-[data-theme="light"] .suspense-pending { color: var(--text-dim); }
+[data-theme="light"] .suspense-pending { color: var(--accent); }
 
 .suspense-sub {
   font-family: var(--font-mono);

@@ -62,7 +62,7 @@ function LiveComponent() {
   return (
     <div style={{ 
       padding: '24px', 
-      background: 'var(--accent-soft)', 
+      background: 'var(--accent-dim)', 
       border: '1px solid var(--accent)', 
       borderRadius: '8px',
       textAlign: 'center',
