@@ -17,6 +17,7 @@ import EffectDemo from "./EffectDemo";
 import AsyncDemo from "./AsyncDemo";
 import StateDemo from "./StateDemo";
 import WhenDemo from "./WhenDemo";
+import LayoutTest from "../LayoutTest";
 
 const modules = [
   { id: "signals", title: "Signals",       desc: "Atomic state primitives",   component: SignalsDemo },
@@ -27,6 +28,12 @@ const modules = [
   { id: "async",   title: "Async/Suspense",desc: "Integrated async flow",     component: AsyncDemo   },
   { id: "state",   title: "State Guard",   desc: "Mutation protection",       component: StateDemo   },
   { id: "When",   title: "When / Whenever",   desc: "Lifecycle & Conditions",       component: WhenDemo   },
+  {
+    id: "layout",
+    title: "Layout System",
+    desc: "Class-based reactivity",
+    component: LayoutTest,
+  },
 ];
 
 export default function DemoPage() {

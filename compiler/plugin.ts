@@ -58,7 +58,7 @@ export function engine(): Plugin {
 
     config(): any {
       return {
-        esbuild: { jsx: "preserve" },
+        oxc: { jsx: "preserve" },
       };
     },
 
@@ -116,6 +116,7 @@ export function engine(): Plugin {
       const isTSX = cleanId.endsWith(".tsx");
       const isTS = cleanId.endsWith(".ts");
       const isState = cleanId.includes(".state.");
+      const isLayout = cleanId.endsWith(".layout.tsx");
       if (!isTSX && !isTS) return null;
 
       try {
